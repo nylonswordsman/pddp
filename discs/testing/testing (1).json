@@ -1,0 +1,194 @@
+[
+  {
+    "phaseType": "initialization",
+    "startingInfluence": 4.0,
+    "evidence": [
+      {
+        "evidenceName": "nothing",
+        "evidenceDesc": "Nuthin'."
+      },
+      {
+        "evidenceName": "Truth Bullet 1",
+        "evidenceDesc": "The first bullet."
+      },
+      {
+        "evidenceName": "absolutely nothing",
+        "evidenceDesc": "Nuffin'."
+      },
+      {
+        "evidenceName": "TB2",
+        "evidenceDesc": "The second bullet. Very short."
+      },
+      {
+        "evidenceName": "Truuuuuuuth Buuuuuuullet 3",
+        "evidenceDesc": "The third bullet. Very long."
+      }
+    ],
+    "counterLines": {
+      "AgreeSuccess": {
+        "speaker": "STARTBLUEtestENDCOLOR",
+        "speech": "STARTCYANsuccessful agree!ENDCOLOR"
+      },
+      "DisagreeSuccess": {
+        "speaker": "STARTBLUEtestENDCOLOR",
+        "speech": "STARTCYANthis is like that one japanese speech jammer gun thingyENDCOLOR"
+      },
+      "CounterFail": {
+        "speaker": "STARTBLUEtestENDCOLOR",
+        "speech": "STARTGREYme when i do it wrongENDCOLOR"
+      },
+      "dummy1": {
+        "speaker": "STARTBLUEdummy1ENDCOLOR",
+        "speech": "STARTREDfailENDCOLOR"
+      },
+      "dummy2": {
+        "speaker": "STARTBLUEdummy2ENDCOLOR",
+        "speech": "STARTREDfailfailENDCOLOR"
+      },
+      "dummy3": {
+        "speaker": "STARTBLUEdummy3ENDCOLOR",
+        "speech": "STARTREDfailfailfailENDCOLOR"
+      }
+    },
+    "discTitlecard": [
+      "STARTPURPLE              { This Is A } ENDCOLOR",
+      "STARTGOLD              { Test. AAA } ENDCOLOR",
+      "STARTRED              { AAAAAAAAA } ENDCOLOR",
+      "STARTRED              { AAAAAAAAA } ENDCOLOR"
+    ],
+    "exposition": "STARTGREY    This is a test. You can technically kinda play it I guess but I 100% guarentee you this will break almost immediately",
+    "failDiscussion": [
+      {
+        "speaker": "test",
+        "speech": "you got deadlocked. that sucks for you."
+      },
+      {
+        "speaker": "test",
+        "speech": "oh no. anyway"
+      },
+      {
+        "speaker": "test",
+        "speech": "length test"
+      },
+      {
+        "speaker": "test",
+        "speech": "keep testing lul"
+      },
+      {
+        "speaker": "test",
+        "speech": "have a faster trigger finger next time. maybe if you didnt have a chronic skill issue. lmao."
+      },
+      {
+        "speaker": "test",
+        "speech": "verylongmessage for testing purposesAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    ]
+  },
+  {
+    "phaseType": "discussion",
+    "lines": [
+      {
+        "speaker": "test",
+        "speech": "imagine waiting around for a full size discussion phase"
+      },
+      {
+        "speaker": "test",
+        "speech": "i couldnt even dream of it"
+      },
+      {
+        "speaker": "test",
+        "speech": "do"
+      },
+      {
+        "speaker": "test",
+        "speech": "debate"
+      },
+      {
+        "speaker": "test",
+        "speech": "fast"
+      }
+    ]
+  },
+  {
+    "phaseType": "choice",
+    "prompt": "What evidence do I have that's really long...?",
+    "choices": [
+      "Truth Bullet 1",
+      "TB2",
+      "Truuuuuuuth Buuuuuuullet 3"
+    ],
+    "responses": [
+      {
+        "speaker": "test",
+        "speech": "STARTGREY(longer than that)ENDCOLOR"
+      },
+      {
+        "speaker": "test",
+        "speech": "STARTGREY(do you have eyes)ENDCOLOR"
+      },
+      "CORRECTANSWER"
+    ]
+  },
+  {
+    "phaseType": "mass_debate",
+    "availableEvidence": [
+      "Truth Bullet 1",
+      "TB2",
+      "Truuuuuuuth Buuuuuuullet 3"
+    ],
+    "lines": [
+      {
+        "speaker": "dummy1",
+        "speech": "STARTGOLDunimportant statementENDCOLOR"
+      },
+      {
+        "speaker": "dummy2",
+        "speech": "redundant agreement"
+      },
+      {
+        "speaker": "dummy1",
+        "speech": "annoying smug comment"
+      },
+      {
+        "speaker": "dummy3",
+        "speech": "bringing up STARTGOLDincorrect statementENDCOLOR as an answer to a question no one asked"
+      },
+      {
+        "speaker": "dummy3",
+        "speech": "statement following the line of logic that incorrect statement was correct"
+      },
+      {
+        "speaker": "dummy2",
+        "speech": "STARTGOLDprofoundly stupid justificationENDCOLOR for incorrect answer"
+      },
+      {
+        "speaker": "dummy1",
+        "speech": "whining and griping about things making no sense"
+      }
+    ],
+    "closingThought": [
+      {
+        "speaker": "STARTBLUEtestENDCOLOR",
+        "speech": "STARTGREY(No... that's not quite right...)ENDCOLOR"
+      },
+      {
+        "speaker": "STARTBLUEtestENDCOLOR",
+        "speech": "STARTGREY(Maybe it doesn't make sense, but... is there anything that would explain why?)ENDCOLOR"
+      }
+    ]
+  },
+  {
+    "phaseType": "split_debate",
+    "evidenceForThisPhase": [
+      0
+    ],
+    "leftSideOpinion": "The Ocean Is Soup",
+    "rightSideOpinion": "The Ocean Is Not Soup",
+    "lines": [
+      {
+        "speaker": "Tutorial",
+        "speech": "placeholder text"
+      }
+    ]
+  }
+]

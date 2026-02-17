@@ -1,0 +1,149 @@
+[
+  {
+    "phaseType": "initialization",
+    "startingInfluence": 4.0,
+    "evidence": [
+      {
+        "evidenceName": "Priomordial Soup",
+        "evidenceDesc": "It's said that all life came from the Priomordial Soup, a massive body of soup from which lifeforms emerged.NEWLINENEWLINEBy definition and title, this Priomordial Soup was... well, a soup."
+      },
+      {
+        "evidenceName": "Underwater Vegetation",
+        "evidenceDesc": "The ocean has much miscellaneous flora, and tons upon tons of plant life with a high variety of types and purposes.NEWLINENEWLINEWithout proper nutrients in the sea, these wouldn't be able to grow. But they do, and lay the foundation for many herbivores."
+      },
+      {
+        "evidenceName": "placeholder",
+        "evidenceDesc": "Hold on a moment."
+      }
+    ],
+    "counterLines": {
+      "User": "[STARTBLUEUserENDCOLOR]> STARTCYANNo, that's wrong!ENDCOLOR",
+      "Tutorial": "[STARTBLUETutorialENDCOLOR]> STARTREDI'm afraid that is incorrect.ENDCOLOR"
+    },
+    "discTitlecard": [
+      "STARTPURPLE { This Is A } ENDCOLOR",
+      "STARTPURPLE { Tutorial. } ENDCOLOR",
+      "STARTBLUE { Please Do } ENDCOLOR",
+      "STARTCYAN { Have Fun. } ENDCOLOR"
+    ],
+    "exposition": "STARTGREYWarm greetings, and thank you for playing with this software.NEWLINEThis tutorial disc will teach you the basics of playing a disc, as well as some common practice for making discs of your own.NEWLINEWe will go over explanations of the different types of phases, as well as brief examples of those phases. Hopefully this will help you gain a feel for how the game is played.ENDCOLOR"
+  },
+  {
+    "phasetype": "discussion",
+    "lines": [
+      {
+        "speaker": "Tutorial",
+        "speech": "The first phase type we will go over is Discussion."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "This current phase is a Discussion, so you may have already gotten an idea on how it works."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Characters speak to each other and, well, discuss, automatically."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "These discussions are usually important to the story (where applicable) and to the debate; be sure to listen closely!"
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "In addition, sometimes STARTGOLDcolored textENDCOLOR will appear in the discussion."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "There are a limited number of colors that can appear in Discussion, not all colors this software can produce is used here."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "STARTGOLDGold textENDCOLOR will generally highlight an important word or phrase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "It is also worth note that you possess an STARTGOLDInfluence gaugeENDCOLOR. It is a measure of how trustworthy you seem to everyone else."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "This guage decreases when you give an incorrect answer during a Choice phase or use the wrong evidence/target the wrong statement in any debate phase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "If this guage reaches zero, your peers become too suspiscious of you, and you are unable to continue."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "When this happens, STARTGOLDthe playback will restart from the beginningENDCOLOR and you will have to replay up to that point."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "However, it is also possible to STARTGOLDheal your Influence gaugeENDCOLOR. This will be detailed more later."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "The next phase will come up shortly. It will be a Choice phase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "In a Choice phase, there is no conversation. You are merely given a prompt and a list of answers."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "You must simply pick the option you believe best answers the prompt."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Choices are less of an entire phase and more of a small thing to keep Discussions lively."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "However, they have the potential to make or break a playback."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Choices deal more damage to your Influence gauge when you choose incorrectly, but also heal a full block when you choose well."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "You will now be given a Choice phase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Throughout this tutorial, we will use the topic of whether or not the ocean is a soup as a placeholder."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "It's often a good idea to glance over your evidence at the beginning of a playback."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Keep in mind that you can do so at any time during a Discussion!"
+      }
+    ]
+  },
+  {
+    "phaseType": "choice",
+    "prompt": "What evidence do I have that makes it obvious that the sea contains nutrients...?",
+    "correctChoice": 2,
+    "choices": [
+      "Priomordial Soup",
+      "placeholder",
+      "Underwater Vegetation"
+    ]
+  },
+  {
+    "phaseType": "massDebate",
+    "evidenceForThisPhase": [
+      0,
+      2
+    ]
+  },
+  {
+    "phaseType": "splitDebate",
+    "evidenceForThisPhase": [
+      0
+    ],
+    "leftSideOpinion": "The Ocean Is Soup",
+    "rightSideOpinion": "The Ocean Is Not Soup"
+  }
+]

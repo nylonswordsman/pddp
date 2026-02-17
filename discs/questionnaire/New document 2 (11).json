@@ -1,0 +1,84 @@
+[
+  {
+    "phasetype": "initialization",
+    "startingInfluence": 5.0,
+    "breakLine": "[STARTCYANLeatherENDCOLOR]> STARTCYAN...!ENDCOLOR",
+    "discTitle": [
+      "STARTRED { This Is A } ENDCOLOR",
+      "STARTGOLD { Test, For } ENDCOLOR",
+      "STARTBLUE { Comp. Sci } ENDCOLOR",
+      "STARTPURPLE { Essential } ENDCOLOR"
+    ],
+    "evidence": [
+      {
+        "evidenceName": "Vanishing Detonator",
+        "evidenceDesc": "During the mission, we found a detonator of some kind. We couldn't tell where it came from, and we never picked it up, but shortly after we pointed it out it disappeared while we weren't looking at it."
+      },
+      {
+        "evidenceName": "Parka's Cloaking",
+        "evidenceDesc": "For a while now, Parka's been using an experimental cloaking device he... borrowed... from a mission site at some point. Generally, he uses it to scout ahead for us in places we can't walk blindly into. Its battery lasts about an hour."
+      },
+      {
+        "evidenceName": "Borrowed Multitool",
+        "evidenceDesc": "Parka has a handy multitool on him at most times. It has a 3-inch blade, a few screwdrivers and hex wrenches, a pry tool, a bottle opener, and a wire cutter. He handed it to Bomber at the beginning of the mission. It was returned to Parka when we got back."
+      }
+    ]
+  },
+  {
+    "phasetype": "discussion",
+    "lines": [
+      {
+        "speaker": "Leather",
+        "speech": "I am STARTGOLDnot a human beingENDCOLOR!"
+      },
+      {
+        "speaker": "Letterman",
+        "speech": "wh-WUUUUUHHH!!!!??????? How could this *be*!??"
+      },
+      {
+        "speaker": "Fleece",
+        "speech": "How... did you not figure that out sooner?"
+      },
+      {
+        "speaker": "Letterman",
+        "speech": "I-uhh... STARTPURPLEI *did* knowENDCOLOR! That's how!"
+      },
+      {
+        "speaker": "Parka",
+        "speech": "Leather? Aren't you mute??"
+      },
+      {
+        "speaker": "Bomber",
+        "speech": "Oh, shut yer trap, Letterman! You did not know that."
+      },
+      {
+        "speaker": "Parka",
+        "speech": "Okay I guess we're just ignoring that."
+      },
+      {
+        "speaker": "Fleece",
+        "speech": "*dies*"
+      }
+    ]
+  },
+  {
+    "array": [
+      1,
+      2,
+      3
+    ],
+    "isWeakSpot": true,
+    "correctPoint": "3",
+    "color": "gold",
+    "speaker": "Parka",
+    "null": null,
+    "number": 123,
+    "object": {
+      "a": "b",
+      "c": "d"
+    },
+    "speech": "Hello World"
+  },
+  {},
+  {}
+]

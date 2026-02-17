@@ -1,0 +1,251 @@
+[
+  {
+    "phaseType": "initialization",
+    "startingInfluence": 4.0,
+    "evidence": [
+      {
+        "evidenceName": "File 02",
+        "evidenceDesc": "The murder took place at around 06:40. The victim was Sigma.NEWLINEThe cause of death was internal bleeding, seemingly caused by blunt trauma. The murder weapon is unknown."
+      },
+      {
+        "evidenceName": "Supply Closet Ladder",
+        "evidenceDesc": "The ladder in the supply closet had been disturbed; after the body was discovered,"
+      },
+      {
+        "evidenceName": "Sigma's Corpse",
+        "evidenceDesc": "Sigma's body was discovered on top of the {thing}."
+      },
+      {
+        "evidenceName": "Theta's Account",
+        "evidenceDesc": "Theta reportedly left her room at about 06:00. She cited that she woke up early, and wished to"
+      }
+    ],
+    "counterLines": {
+      "AgreeSuccess": {
+        "speaker": "STARTBLUEMuENDCOLOR",
+        "speech": "STARTCYANThis is the answer.ENDCOLOR"
+      },
+      "DisagreeSuccess": {
+        "speaker": "STARTBLUEMuENDCOLOR",
+        "speech": "STARTCYANThat's not right.ENDCOLOR"
+      },
+      "CounterFail": {
+        "speaker": "STARTBLUEMuENDCOLOR",
+        "speech": "STARTGREY<Ah... that was wrong.>ENDCOLOR"
+      },
+      "Tau": {
+        "speaker": "STARTBLUETauENDCOLOR",
+        "speech": "STARTREDAnd where *exactly* does that come in?ENDCOLOR"
+      },
+      "Gamma": {
+        "speaker": "STARTBLUEGammaENDCOLOR",
+        "speech": "STARTREDErhh... what're you talking about?ENDCOLOR"
+      },
+      "Iota": {
+        "speaker": "STARTBLUEIotaENDCOLOR",
+        "speech": "STARTREDI'm not certain I follow your logic.ENDCOLOR"
+      },
+      "Theta": {
+        "speaker": "STARTBLUEThetaENDCOLOR",
+        "speech": "STARTREDUhh... sorry, could you please explain that a little better?ENDCOLOR"
+      },
+      "Psi": {
+        "speaker": "STARTBLUEPsiENDCOLOR",
+        "speech": "STARTREDU-um, s-sorry, I don't th-ink that's, uhh... quite ri-ght...?ENDCOLOR"
+      },
+      "Lambda": {
+        "speaker": "STARTBLUELambdaENDCOLOR",
+        "speech": "STARTREDAh-, not to bother, but could you elaborate on that a little further?ENDCOLOR"
+      },
+      "Epsilon": {
+        "speaker": "STARTBLUEEpsilonENDCOLOR",
+        "speech": "STARTRED(Epsilon's eye bores into you with a challenging gaze.)ENDCOLOR"
+      }
+    },
+    "discTitlecard": [
+      "STARTPURPLE              { This Is A } ENDCOLOR",
+      "STARTPURPLE              { Tutorial. } ENDCOLOR",
+      "STARTBLUE              { Please Do } ENDCOLOR",
+      "STARTCYAN              { Have Fun. } ENDCOLOR"
+    ],
+    "exposition": "exposition ya",
+    "failDiscussion": [
+      {
+        "speaker": "Tau",
+        "speech": "STARTGREY(Tau gives a sudden, agitated sigh, coming out as a brisk huff.)ENDCOLOR"
+      },
+      {
+        "speaker": "Tau",
+        "speech": "Do you *mind*, Mu? Our *lives* are at stake."
+      },
+      {
+        "speaker": "Tau",
+        "speech": "In case you've forgotten, this- this *small child*-"
+      },
+      {
+        "speaker": "Tau",
+        "speech": "STARTGREY(Tau gestures briskly toward Omega.)ENDCOLOR"
+      },
+      {
+        "speaker": "Tau",
+        "speech": "-will *brutally kill all of us* if we don't figure this out in time!"
+      },
+      {
+        "speaker": "Iota",
+        "speech": "STARGREY(Iota casts his gaze to the far wall, unable to meet yours.)ENDCOLOR"
+      },
+      {
+        "speaker": "Iota",
+        "speech": "...I apologise."
+      },
+      {
+        "speaker": "Iota",
+        "speech": "It seems I've... overestimated your talent."
+      },
+      {
+        "speaker": "Iota",
+        "speech": "It seems I've trusted you with more than you are capable of."
+      }
+    ]
+  },
+  {
+    "phaseType": "discussion",
+    "lines": [
+      {
+        "speaker": "Theta",
+        "speech": "Eugh... it feels... *dangerous* in here now..."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "This current phase is a Discussion, so you may have already gotten an idea on how it works."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Characters speak to each other and, well, discuss, automatically."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "These discussions are usually important to the story (where applicable) and to the debate; be sure to listen closely!"
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "In addition, sometimes STARTGOLDcolored textENDCOLOR will appear in the discussion."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "There are a limited number of colors that can appear in Discussion, not all colors this software can produce is used here."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "STARTGOLDGold textENDCOLOR will generally highlight an important word or phrase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "It is also worth note that you possess an STARTGOLDInfluence gaugeENDCOLOR. It is a measure of how trustworthy you seem to everyone else."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "This guage decreases when you give an incorrect answer during a Choice phase or use the wrong evidence/target the wrong statement in any debate phase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "If this guage reaches zero, your peers become too suspicious of you, and you are unable to continue."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "When this happens, STARTGOLDthe playback will restart from the beginningENDCOLOR and you will have to replay up to that point."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "However, it is also possible to STARTGOLDheal your Influence gaugeENDCOLOR. This will be detailed more later."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "The next phase will come up shortly. It will be a Choice phase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "In a Choice phase, there is no conversation. You are merely given a prompt and a list of answers."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "You must simply pick the option you believe best answers the prompt."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Choices are less of an entire phase and more of a small thing to keep Discussions lively."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "However, they have the potential to make or break a playback."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Choices deal more damage to your Influence gauge when you choose incorrectly, but also heal a full block when you choose well."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "You will now be given a Choice phase."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Throughout this tutorial, we will use the topic of whether or not the ocean is a soup as a placeholder."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "It's often a good idea to glance over your evidence at the beginning of a playback."
+      },
+      {
+        "speaker": "Tutorial",
+        "speech": "Keep in mind that you can do so at any time during a Discussion!"
+      }
+    ]
+  },
+  {
+    "phaseType": "choice",
+    "prompt": "What evidence do I have that makes it obvious that the sea contains nutrients...?",
+    "choices": [
+      "Priomordial Soup",
+      "placeholder",
+      "Underwater Vegetation"
+    ],
+    "responses": [
+      {
+        "speaker": "User",
+        "speech": "STARTGREY(No... that doesn't necessarily prove there's nutrients in the sea we know, because it isn't around anymore...)ENDCOLOR"
+      },
+      {
+        "speaker": "User",
+        "speech": "STARTGREY(No... This is placeholder data! It doesn't have any significance!)ENDCOLOR"
+      },
+      "CORRECTANSWER"
+    ]
+  },
+  {
+    "phaseType": "massDebate",
+    "evidenceForThisPhase": [
+      0,
+      2
+    ],
+    "lines": [
+      {
+        "speaker": "Tutorial",
+        "speech": "placeholder text"
+      }
+    ]
+  },
+  {
+    "phaseType": "splitDebate",
+    "evidenceForThisPhase": [
+      0
+    ],
+    "leftSideOpinion": "The Ocean Is Soup",
+    "rightSideOpinion": "The Ocean Is Not Soup",
+    "lines": [
+      {
+        "speaker": "Tutorial",
+        "speech": "placeholder text"
+      }
+    ]
+  }
+]

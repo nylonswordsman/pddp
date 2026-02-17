@@ -1,0 +1,50 @@
+[
+  {
+    "phasetype": "init",
+    "startingInfluence": 5.0,
+    "evidence": [
+      {
+        "evidenceName": "Vanishing Detonator",
+        "evidenceDesc": "During the mission, we found a detonator of some kind. We couldn't tell where it came from, and we never picked it up, but shortly after we pointed it out it disappeared while we weren't looking at it."
+      },
+      {
+        "evidenceName": "Parka's Cloaking",
+        "evidenceDesc": "For a while now, Parka's been using an experimental cloaking device he... 'borrowed' from a mission site at some point. Generally, he uses it to scout ahead for us in places we can't walk blindly into. Its battery lasts about an hour."
+      },
+      {
+        "evidenceName": "Borrowed Multitool",
+        "evidenceDesc": "Parka has a handy multitool on him at most times. It has a 3-inch blade, a few screwdrivers and hex wrenches, a pry tool, a bottle opener, and a wire cutter. He'll only hand it to Bomber; if anyone else needs the tools, he'll insist on doing whatever needs done with it himself."
+      }
+    ]
+  },
+  {
+    "phasetype": "Conversation",
+    "New item": [
+      {
+        "speaker": "testing",
+        "speech": "'I am ' + escGold + 'not a real person' + escEnd + '!'"
+      },
+      {}
+    ]
+  },
+  {
+    "array": [
+      1,
+      2,
+      3
+    ],
+    "isWeakSpot": true,
+    "correctPoint": "3",
+    "color": "gold",
+    "speaker": "Parka",
+    "null": null,
+    "number": 123,
+    "object": {
+      "a": "b",
+      "c": "d"
+    },
+    "speech": "Hello World"
+  },
+  {},
+  {}
+]
