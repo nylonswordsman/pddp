@@ -1,5 +1,6 @@
 import sys
-import pygame
+import pynput
+import playsound
 import os
 import time
 import json
@@ -14,11 +15,6 @@ os.environ['SDL_AUDIODRIVER'] = 'dsp'
 
 
 
-pygame.init()
-display = pygame.display.set_mode((1280, 720))
-clock = pygame.time.Clock()
-
-
 """* these variables are ANSI escape codes. when the're read in a
 string they tell the terminal to ignore them and start applying a
 certain modification to the text after them instead of printing
@@ -30,19 +26,37 @@ to make my time writing the dialogue easier
 * i cant directly use the codes in the dialogue in the disc file
 because they contain escape characters like backslashes which .json
 files Do Not Like to contain as it turns out"""
-escRed = '\033[31m'      ## corresponds to 'STARTRED' in dialogue
-escGreen = '\033[32m'  ## corresponds to 'STARTGREEN' in dialogue
-escGold = '\033[33m'     ## corresponds to 'STARTGOLD' in dialogue
-escBlue = '\033[34m'     ## corresponds to 'STARTBLUE' in dialogue
-escPurple = '\033[1;35m' ## corresponds to 'STARTPURPLE' in dialogue
-escCyan = '\033[1;36m' ## corresponds to 'STARTCYAN' in dialogue
-escGrey = '\033[37m' ## corresponds to 'STARTGREY' in dialogue
-escEnd = '\033[m'        ## corresponds to 'ENDCOLOR' in dialogue
+
+##### NOT WINDOWS
+#escRed = '\033[31m'      ## corresponds to 'STARTRED' in dialogue
+#escGreen = '\033[32m'  ## corresponds to 'STARTGREEN' in dialogue
+#escGold = '\033[33m'     ## corresponds to 'STARTGOLD' in dialogue
+#escBlue = '\033[34m'     ## corresponds to 'STARTBLUE' in dialogue
+#escPurple = '\033[1;35m' ## corresponds to 'STARTPURPLE' in dialogue
+#escCyan = '\033[1;36m' ## corresponds to 'STARTCYAN' in dialogue
+#escGrey = '\033[37m' ## corresponds to 'STARTGREY' in dialogue
+#escEnd = '\033[m'        ## corresponds to 'ENDCOLOR' in dialogue
+### stop code for the color escape codes
+#escClick = '\a'          ## corresponds to 'CLICKSOUND' in dialogue
+### makes a click sound
+#escNewline = '\n'        ## corresponds to 'NEWLINE' in dialogue
+### performs a line break
+
+#### WINDOWS
+escRed = '\x1b[1;31m'      ## corresponds to 'STARTRED' in dialogue
+escGreen = '\x1b[32m'  ## corresponds to 'STARTGREEN' in dialogue
+escGold = '\x1b[33m'     ## corresponds to 'STARTGOLD' in dialogue
+escBlue = '\x1b[1;34m'     ## corresponds to 'STARTBLUE' in dialogue
+escPurple = '\x1b[1;35m' ## corresponds to 'STARTPURPLE' in dialogue
+escCyan = '\x1b[1;36m' ## corresponds to 'STARTCYAN' in dialogue
+escGrey = '\x1b[37m' ## corresponds to 'STARTGREY' in dialogue
+escEnd = '\x1b[m'        ## corresponds to 'ENDCOLOR' in dialogue
 ## stop code for the color escape codes
 escClick = '\a'          ## corresponds to 'CLICKSOUND' in dialogue
 ## makes a click sound
 escNewline = '\n'        ## corresponds to 'NEWLINE' in dialogue
 ## performs a line break
+
 """START{color} (like STARTRED or STARTGOLD) place an escape code
 in dialogue and names. these codes will cause the text ahead of
 them to be written in that color. ENDCOLOR will "stop" the currently
@@ -385,10 +399,7 @@ def transition_phase():
         ## call handler for mass debate phases
         enter_to_continue()
         mass_debate(True)
-#    these were cut due to NOT BEING ABLE TO WORK ON THEM
-#    NOT THAT IM BITTER !! !! THANK YOU LM SYSADMINS /heavily exaggerated
-#    (this is jokes. we love you sysadmins! thank you for all the
-#    hard work you do and have a great day <3)
+#    #these dont work yet
 #    elif currentPhase["phaseType"] == "split_debate":
 #        pass
 #    elif currentPhase["phaseType"] == "closing_argument":
@@ -470,15 +481,16 @@ def iterate_through_discussion(thisPhase):
 def oversee_discussion():
     global phaseInProgress
     while phaseInProgress:
+        pass
         ## sift through events for key presses, and sift through those for space or enter specifically
-        for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
-                    print("space pressed")
-                if event.key == pygame.K_RETURN:
-                    print("enter pressed")
+#        for event in pygame.event.get():
+#            if event.type == pygame.KEYDOWN:
+#                if event.key == pygame.K_SPACE:
+#                    print("space pressed")
+#                if event.key == pygame.K_RETURN:
+#                    print("enter pressed")
         ## cap fps at 30 because anything beyond that is simply unnecessary
-        clock.tick(30)
+#        clock.tick(30)
 
 
 def choice(intro=bool):
@@ -605,21 +617,22 @@ def oversee_mass_debate(thisPhase):
     global availableEvidence
     global availableEvidenceIndex
     while phaseInProgress:
+        pass
         ## sift through events for key presses, and sift through those for space or enter specifically
-        for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
-                    print("space pressed")
-                    ## if you're on the last evidence wrap back around to the first evidence
-                    if availableEvidenceIndex == len(availableEvidence):
-                        availableEvidenceIndex = 0
-                    else:
-                        availableEvidenceIndex += 1
-                    print(truth_bullet(availableEvidence[availableEvidenceIndex]))
-                if event.key == pygame.K_RETURN:
-                    print("enter pressed")
-        ## cap fps at 30 because anything beyond that is simply unnecessary
-        clock.tick(30)
+#        for event in pygame.event.get():
+#            if event.type == pygame.KEYDOWN:
+#                if event.key == pygame.K_SPACE:
+#                    print("space pressed")
+#                    ## if you're on the last evidence wrap back around to the first evidence
+#                    if availableEvidenceIndex == len(availableEvidence):
+#                        availableEvidenceIndex = 0
+#                    else:
+#                        availableEvidenceIndex += 1
+#                    print(truth_bullet(availableEvidence[availableEvidenceIndex]))
+#                if event.key == pygame.K_RETURN:
+#                    print("enter pressed")
+#        ## cap fps at 30 because anything beyond that is simply unnecessary
+#        clock.tick(30)
     print("overseer ended")
 
 

@@ -1,3 +1,5 @@
+# it should probably by itself enable ansi processing for itself cuz otherwise the ansi escape codes break
+
 !!!!!!!!
 IMPORTANT: the black screen is intentional!!! thats supposed to happen!
 the only reason its there at all is so that pygame accepts
@@ -9,8 +11,7 @@ terminal takes up most of the space (but not all cuz then the window
 stops being focusable if you minimize it completely)
 !!!!!!!!
 
-https://jsoneditoronline.org
-^ helps you make discs
+https://jsoneditoronline.org   < helps you make discs
 
 
 # Todo
