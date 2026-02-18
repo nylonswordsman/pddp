@@ -506,24 +506,24 @@ def choice(intro=bool):
     try:
         guess = int(input(escGrey + "Choose by number...\n" + escEnd))
         if (guess - 1) < 0:
-            sys.stdout.write("\033[F\033[2K")
+            sys.stdout.write("\x1b[F\x1b[2K")
             for iteration in range(iterationNumber):
-                sys.stdout.write("\033[F\033[2K")
+                sys.stdout.write("\x1b[F\x1b[2K")
             restart_phase()
         if (guess - 1) >= iterationNumber:
-            sys.stdout.write("\033[F\033[2K")
+            sys.stdout.write("\x1b[F\x1b[2K")
             for iteration in range(iterationNumber):
-                sys.stdout.write("\033[F\033[2K")
+                sys.stdout.write("\x1b[F\x1b[2K")
             restart_phase()
     except IndexError:
-        sys.stdout.write("\033[F\033[2K")
+        sys.stdout.write("\x1b[F\x1b[2K")
         for iteration in range(iterationNumber):
-            sys.stdout.write("\033[F\033[2K")
+            sys.stdout.write("\x1b[F\x1b[2K")
         restart_phase()
     except ValueError:
         sys.stdout.write("\033[F\033[2K")
         for iteration in range(iterationNumber):
-            sys.stdout.write("\033[F\033[2K")
+            sys.stdout.write("\x1b[F\x1b[2K")
         restart_phase()
     try:
         if currentPhase["responses"][guess - 1] == "CORRECTANSWER":
@@ -537,14 +537,14 @@ def choice(intro=bool):
             damage_influence(1)
             time.sleep(1)
     except IndexError:
-        sys.stdout.write("\033[F\033[2K")
+        sys.stdout.write("\x1b[F\x1b[2K")
         for iteration in range(iterationNumber):
-            sys.stdout.write("\033[F\033[2K")
+            sys.stdout.write("\x1b[F\x1b[2K")
         restart_phase()
     except ValueError:
-        sys.stdout.write("\033[F\033[2K")
+        sys.stdout.write("\x1b[F\x1b[2K")
         for iteration in range(iterationNumber):
-            sys.stdout.write("\033[F\033[2K")
+            sys.stdout.write("\x1b[F\x1b[2K")
         restart_phase()
     ## start failure sequence if influence is less than or equal to 0
     if influence <= 0.0:
@@ -640,13 +640,13 @@ def oversee_mass_debate(thisPhase):
 def truth_bullet(evidence):
     global availableEvidence
     global availableEvidenceIndex
-    bullet = (escCyan + "►  [ " + escBlue + evidence + escCyan + " (" + str(availableEvidenceIndex+1) + "/" + str(len(availableEvidence)) + ") ] > »" + escEnd)
+    bullet = (escCyan + "►  │[ " + escBlue + evidence + escCyan + " (" + str(availableEvidenceIndex+1) + "/" + str(len(availableEvidence)) + ") ] > »" + escEnd)
     return bullet
 
 """like truth_bullet() but it doesnt display the index"""
 def intro_truth_bullet(evidence):
     global availableEvidence
-    bullet = (escCyan + "►  [ " + escBlue + evidence + escCyan + " ] > »" + escEnd)
+    bullet = (escCyan + "►  │[ " + escBlue + evidence + escCyan + " ] > »" + escEnd)
     return bullet
 
 """this in particular is a roundabout way to prevent input from the
