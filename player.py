@@ -5,6 +5,8 @@ import os
 import time
 import json
 
+## not all of these need to be used, find the best one for the task
+## and work with it
 import signal
 import threading
 import multiprocessing
@@ -15,7 +17,7 @@ os.environ['SDL_AUDIODRIVER'] = 'dsp'
 
 
 
-"""* these variables are ANSI escape codes. when the're read in a
+"""* these variables are escape codes. when the're read in a
 string they tell the terminal to ignore them and start applying a
 certain modification to the text after them instead of printing
 like normal
